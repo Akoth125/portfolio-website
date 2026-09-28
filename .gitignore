@@ -3,3 +3,7 @@ dist
 .DS_Store
 *.local
 .env
+# TypeScript/Vite build files
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
