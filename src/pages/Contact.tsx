@@ -1,5 +1,5 @@
 import { profile } from '../data/profile'
-// @ts-expect-error CSS is handled by the bundler and has no TypeScript declarations.
+
 import './Contact.css'
 
 export default function Contact() {
