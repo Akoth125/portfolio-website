@@ -1,0 +1,80 @@
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.project-card__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1rem;
+  background: var(--dark);
+  color: #b9bccb;
+}
+
+.project-card__file {
+  font-size: 0.78rem;
+  color: var(--accent);
+}
+
+.project-card__period {
+  font-size: 0.72rem;
+  color: #8b8fa0;
+}
+
+.project-card__body {
+  padding: 1.5rem;
+}
+
+.project-card__body h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+}
+
+.project-card__summary {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  margin-bottom: 0.9rem;
+}
+
+.project-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.1rem;
+}
+
+.project-card__details li {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.project-card__details li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 5px;
+  height: 5px;
+  background: var(--teal);
+}
+
+.project-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding-top: 0.9rem;
+  border-top: 1px dashed var(--border);
+}
+
+.project-card__stack li {
+  font-size: 0.72rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.2rem 0.5rem;
+}

@@ -1,0 +1,37 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.contact-card:not(.contact-card--static):hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.contact-card__label {
+  font-size: 0.75rem;
+  color: var(--accent-dim);
+}
+
+.contact-card__value {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

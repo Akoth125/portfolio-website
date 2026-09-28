@@ -1,0 +1,62 @@
+.resume-head__row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn--dark {
+  background: var(--dark);
+  color: #f2f2f5;
+}
+
+.btn--dark:hover {
+  background: var(--ink-soft);
+}
+
+.resume-timeline,
+.resume-education {
+  border-top: 1px solid var(--border);
+}
+
+.resume-timeline h2,
+.resume-education h2 {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.resume-education__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.resume-education__list li {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  gap: 1.25rem;
+}
+
+.resume-education__list span {
+  font-size: 0.78rem;
+  color: var(--accent-dim);
+  padding-top: 0.2rem;
+}
+
+.resume-education__list h3 {
+  font-size: 1.02rem;
+  margin-bottom: 0.3rem;
+}
+
+.resume-education__list p {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 560px) {
+  .resume-education__list li {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+}
