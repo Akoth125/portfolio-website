@@ -1,57 +1,132 @@
 # Violet Ongonge — Portfolio
 
-React + TypeScript + CSS portfolio site, built with Vite.
+My personal portfolio website, built with **React, TypeScript, CSS, and Vite**.
 
-## Getting started
+The site showcases my projects, skills, experience, and ongoing journey as a Computer Science graduate and developer.
+
+## 🚀 Getting Started
+
+Clone the repository and install the dependencies:
 
 ```bash
 npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-Open the printed local URL (usually `http://localhost:5173`).
+Open the local URL printed in your terminal (usually `http://localhost:5173`).
 
-## Build for production
+## 📦 Build for Production
+
+Create a production build:
 
 ```bash
 npm run build
-npm run preview   # test the production build locally
 ```
 
-The build output lands in `dist/` — deploy that folder to Netlify, Vercel,
-GitHub Pages, or any static host.
+Preview the production build locally:
 
-## Project structure
-
+```bash
+npm run preview
 ```
+
+The production files are generated in the `dist/` folder and can be deployed to platforms such as Vercel, Netlify, or GitHub Pages.
+
+## 📁 Project Structure
+
+```text
 src/
-  data/profile.ts     ← all content (name, bio, projects, skills, experience...)
-  components/         ← Nav, Footer, ProjectCard, Timeline
-  pages/               ← one file per route (Home, About, Projects, Skills, Resume, Blog, Contact)
-  index.css            ← design tokens (colors, type, spacing) + global resets
+├── data/
+│   └── profile.ts          # Portfolio content and personal information
+├── components/             # Reusable UI components
+│   ├── Nav.tsx
+│   ├── Footer.tsx
+│   ├── ProjectCard.tsx
+│   └── Timeline.tsx
+├── pages/                  # Individual portfolio pages
+│   ├── Home.tsx
+│   ├── About.tsx
+│   ├── Projects.tsx
+│   ├── Skills.tsx
+│   ├── Resume.tsx
+│   ├── Blog.tsx
+│   └── Contact.tsx
+└── index.css               # Global styles and design tokens
 ```
 
-## Editing content
+## ✏️ Editing Content
 
-Almost everything on the site is pulled from **`src/data/profile.ts`**.
-To update your bio, add a project, or change a skill, edit that file —
-you generally won't need to touch the page components at all.
+Most of the content displayed throughout the portfolio is stored in:
 
-## Adding your resume PDF
+```text
+src/data/profile.ts
+```
 
-Drop a file named `resume.pdf` into the `public/` folder. The "Download PDF"
-button on the Resume page already links to `/resume.pdf`.
+This includes information such as my:
 
-## Adding blog posts
+* Bio
+* Skills
+* Projects
+* Experience
+* Education
 
-The Blog page (`src/pages/Blog.tsx`) currently shows an empty state. Add
-entries to the `posts` array at the top of that file once you're ready to
-publish — each post just needs a `slug`, `title`, `date`, and `excerpt`.
+Updating the content in this file makes it easier to maintain the portfolio without having to modify individual page components.
 
-## Design notes
+## 📄 Adding a Resume
 
-- **Type:** Space Grotesk (display), Inter (body), IBM Plex Mono (labels/tags/meta)
-- **Color:** dark ink (`#12141d`) + amber accent (`#e8a23a`) + teal detail (`#1f6f63`) on a cool paper background (`#eef0f2`)
-- Project cards and the resume timeline are styled to echo the structured,
-  systems-minded work in the projects themselves (auth flows, audit logs,
-  API integrations) rather than a generic template look.
+To add a downloadable resume:
+
+1. Place your PDF inside the `public/` folder.
+2. Name it `resume.pdf`.
+
+The Resume page is already configured to link to:
+
+```text
+/resume.pdf
+```
+
+## ✍🏽 Blog
+
+The Blog page currently displays an empty state.
+
+When I'm ready to publish, posts can be added to the `posts` array in:
+
+```text
+src/pages/Blog.tsx
+```
+
+Each post includes:
+
+* `slug`
+* `title`
+* `date`
+* `excerpt`
+
+## 🎨 Design
+
+The portfolio uses a simple, structured visual system:
+
+* **Typography:** Space Grotesk, Inter, and IBM Plex Mono
+* **Primary color:** Dark ink `#12141d`
+* **Accent:** Amber `#e8a23a`
+* **Detail:** Teal `#1f6f63`
+* **Background:** Cool paper `#eef0f2`
+
+The design is intentionally structured around the kind of work I enjoy building — practical interfaces, systems, and projects rather than a purely template-driven portfolio.
+
+## 🛠️ Tech Stack
+
+* React
+* TypeScript
+* Vite
+* CSS
+* Git & GitHub
+
+---
+
+Built by **Violet Ongonge** while learning, experimenting, and building my way forward in tech. 💻
+
